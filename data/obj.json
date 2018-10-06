@@ -1,0 +1,408 @@
+[
+    {
+        "name": "Pot x 68 crayons Polychromos",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/210050_10_PM1.jpg",
+        "price": 130
+    },
+    {
+        "name": "Crayon Polychromos studio box de 36 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110038_10_PM1.jpg",
+        "price": 70
+    },
+    {
+        "name": "Crayon Polychromos boîte métal de 24 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110024_10_PM1.jpg",
+        "price": 43
+    },
+    {
+        "name": "Crayon Polychromos boîte métal de 36 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110036_10_PM1.jpg",
+        "price": 65
+    },
+    {
+        "name": "Crayon Polychromos boîte métal de 60 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110060_10_PM1.jpg",
+        "price": 115
+    },
+    {
+        "name": "Crayon Polychromos boîte métal de 12 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110012_10_PM1.jpg",
+        "price": 22
+    },
+    {
+        "name": "Crayon Polychromos boîte métal de 120 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110011_10_PM1.jpg",
+        "price": 225
+    },
+    {
+        "name": "Crayon Polychromos coffret bois de 72 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110072_10_PM1.jpg",
+        "price": 290
+    },
+    {
+        "name": "Crayon Polychromos coffret bois de 120 pcs",
+        "gamme": 13,
+        "type": 2,
+        "photo": "img/110013_10_PM1.jpg",
+        "price": 350
+    },
+    {
+        "name": "Crayons A. Dürer Magnus boîte de métal de 12",
+        "gamme": 10,
+        "type": 2,
+        "photo": "img/116912_10_PM3.jpg",
+        "price": 35
+    },
+    {
+        "name": "Crayons A. Dürer Magnus boîte de métal de 24",
+        "gamme": 10,
+        "type": 2,
+        "photo": "img/116924_10_PM3.jpg",
+        "price": 70
+    },
+    {
+        "name": "Coffret bois A. Dürer Magnus x30+acc.",
+        "gamme": 10,
+        "type": 2,
+        "photo": "img/116900_10_PM1.jpg",
+        "price": 135
+    },
+    {
+        "name": "Crayon Pitt Pastel boîte métal de 12 pcs",
+        "gamme": 11,
+        "type": 3,
+        "photo": "img/112112_10_PM3.jpg",
+        "price": 21
+    },
+    {
+        "name": "Crayon Pitt Pastel boîte métal de 24 pcs",
+        "gamme": 11,
+        "type": 3,
+        "photo": "img/112124_10_PM1.jpg",
+        "price": 43
+    },
+    {
+        "name": "Crayon Pitt Pastel boîte métal de 36 pcs",
+        "gamme": 11,
+        "type": 3,
+        "photo": "img/112136_10_PM1.jpg",
+        "price": 63
+    },
+    {
+        "name": "Crayon Pitt Pastel boîte métal de 60 pcs",
+        "gamme": 11,
+        "type": 3,
+        "photo": "img/112160_10_PM1.jpg",
+        "price": 102
+    },
+    {
+        "name": "Blister de 3 crayons Pitt Pastel",
+        "gamme": 11,
+        "type": 3,
+        "photo": "img/112797_10_PM1.jpg",
+        "price": 6
+    },
+    {
+        "name": "Set Pitt Graphite boîte métal petit",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112972_10_PM1.jpg",
+        "price": 27
+    },
+    {
+        "name": "Set Pitt Graphite boîte métal moyen",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112973_10_PM1.jpg",
+        "price": 49
+    },
+    {
+        "name": "Set Pitt Graphite boîte métal grand",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112974_10_PM1.jpg",
+        "price": 64
+    },
+    {
+        "name": "Set Pitt Monochrome pro 12 pcs",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112975_10_PM1.jpg",
+        "price": 30
+    },
+    {
+        "name": "Set Pitt Monochrome boîte métal 21 pcs",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112976_10_PM1.jpg",
+        "price": 40
+    },
+    {
+        "name": "Set Pitt Monochrome boîte métal 33 pcs",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112977_10_PM1.jpg",
+        "price": 67
+    },
+    {
+        "name": "Set Pitt Charcoal boîte métal 24 pcs",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112978_10_PM1.jpg",
+        "price": 49
+    },
+    {
+        "name": "Coffret bois Pitt Monochrome assortiment",
+        "gamme": 12,
+        "type": 6,
+        "photo": "img/112971_10_PM1.jpg",
+        "price": 325
+    },
+    {
+        "name": "Craie pastel Polychromos secs boîte métal de 12",
+        "gamme": 13,
+        "type": 5,
+        "photo": "img/128512_10_PM1.jpg",
+        "price": 21
+    },
+    {
+        "name": "Craie pastel Polychromos secs boîte métal de 24",
+        "gamme": 13,
+        "type": 5,
+        "photo": "img/128524_10_PM1.jpg",
+        "price": 43
+    },
+    {
+        "name": "Craie pastel Polychromos secs boîte métal de 36",
+        "gamme": 13,
+        "type": 5,
+        "photo": "img/128536_10_PM1.jpg",
+        "price": 65
+    },
+    {
+        "name": "Craie pastel Polychromos secs boîte métal de 60",
+        "gamme": 13,
+        "type": 5,
+        "photo": "img/128560_10_PM1.jpg",
+        "price": 115
+    },
+    {
+        "name": "Set Castell 9000 Jumbo",
+        "gamme": 14,
+        "type": 1,
+        "photo": "img/119398_10_PM1.jpg",
+        "price": 10
+    },
+    {
+        "name": "Étui de 5 crayons graphite Aquarelle",
+        "gamme": 14,
+        "type": 1,
+        "photo": "img/117805_10_PM1.jpg",
+        "price": 9
+    },
+    {
+        "name": "Étui de 5 crayons graphite Castell 9000",
+        "gamme": 14,
+        "type": 1,
+        "photo": "img/119305_10_PM1.jpg",
+        "price": 10
+    },
+    {
+        "name": "Set Sélection Castell 9000 de 6 crayons graphite",
+        "gamme": 14,
+        "type": 1,
+        "photo": "img/119063_10_PM1.jpg",
+        "price": 8
+    },
+    {
+        "name": "Set Design de 12 crayons graphite Castell 9000",
+        "gamme": 14,
+        "type": 1,
+        "photo": "img/119064_10_PM1.jpg",
+        "price": 17
+    },
+    {
+        "name": "Set Art de 12 crayons graphite Castell 9000",
+        "gamme": 14,
+        "type": 1,
+        "photo": "img/119065_10_PM1.jpg",
+        "price": 17
+    },
+    {
+        "name": "Feutre Pitt Artist Pen Studio box de 12 pcs",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167146_10_PM1.jpg",
+        "price": 32
+    },
+    {
+        "name": "Feutre Pitt Artist Pen Studio box de 60 pcs",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167150_10_PM1.jpg",
+        "price": 160
+    },
+    {
+        "name": "Feutre Pitt Artist Pen Studio box de 24 pcs",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167147_10_PM1.jpg",
+        "price": 65
+    },
+    {
+        "name": "Feutre Pitt Artist Pen Studio box de 48 pcs",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167148_10_PM1.jpg",
+        "price": 125
+    },
+    {
+        "name": "Feutre Pitt Artist Pen noir étui de 4 S/F/M/B",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167100_10_PM1.jpg",
+        "price": 10
+    },
+    {
+        "name": "Feutre Pitt Artist Pen sépia étui de 4 S/F/M/B",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167101_10_PM1.jpg",
+        "price": 10
+    },
+    {
+        "name": "Feutre Pitt Artist Pen sanguine étui de 4 S/F/M/B",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167102_10_PM1.jpg",
+        "price": 10
+    },
+    {
+        "name": "Feutre Pitt Artist Pen noir étui de 8",
+        "gamme": 15,
+        "type": 4,
+        "photo": "img/167137_10_PM1.jpg",
+        "price": 20
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer boîte de métal de 12 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117512_10_PM1.jpg",
+        "price": 22
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer boîte de métal de 24 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117524_10_PM1.jpg",
+        "price": 43
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer boîte de métal de 36 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117536_10_PM1.jpg",
+        "price": 65
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer boîte de métal de 60 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117560_10_PM1.jpg",
+        "price": 115
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer boîte de métal de 120 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117511_10_PM1.jpg",
+        "price": 225
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer studio box de 36 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117538_10_PM1.jpg",
+        "price": 70
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer coffret bois de 48 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117506_10_PM1.jpg",
+        "price": 140
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer coffret bois de 72 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117572_10_PM1.jpg",
+        "price": 290
+    },
+    {
+        "name": "Crayons de couleur Albrecht Dürer coffret bois de 120 pcs",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117513_10_PM1.jpg",
+        "price": 350
+    },
+    {
+        "name": "Boîte métal Mixed Media Albrecht Dürer",
+        "gamme": 9,
+        "type": 2,
+        "photo": "img/117540_10_PM1.jpg",
+        "price": 28
+    },
+    {
+        "name": "Gomme mie de pain gris",
+        "gamme": 16,
+        "type": 7,
+        "photo": "img/127220_10_PM1.jpg",
+        "price": 1
+    },
+    {
+        "name": "Estompe 9125",
+        "gamme": 16,
+        "type": 7,
+        "photo": "img/122780_10_PM1.jpg",
+        "price": 3
+    },
+    {
+        "name": "Brosse à dessin 1600",
+        "gamme": 16,
+        "type": 7,
+        "photo": "img/178016_10_PM1.jpg",
+        "price": 12
+    },
+    {
+        "name": "Pinceau A&G réservoir à eau",
+        "gamme": 16,
+        "type": 8,
+        "photo": "img/185105_10_PM1.jpg",
+        "price": 7
+    },
+    {
+        "name": "Gobelet CLIC&GO Art & Graphic",
+        "gamme": 16,
+        "type": 8,
+        "photo": "img/181520_10_PM1.jpg",
+        "price": 3
+    }
+]
