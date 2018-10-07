@@ -59,13 +59,12 @@ function page_admin_articles($sql) {
 function page_admin_categories($sql) {
     if (isset($_GET['del_id'])) {
 		$del_id = ceil($_GET['del_id']);
-		if (!$articles = mysqli_query($sql, "SELECT * FROM articles WHERE gamme = ".$del_id))
-			$articles = mysqli_query($sql, "SELECT * FROM articles WHERE type = ".$del_id);
+		$articles = mysqli_query($sql, "SELECT * FROM articles WHERE gamme = ".$del_id." OR type = ".$del_id);
 		if (mysqli_num_rows($articles) > 0) {
             $msg = "Il y a encore des articles dans cette categorie, vous ne pouvez donc pas la supprimer";
 		} else {
 			mysqli_query($sql, "DELETE FROM categories WHERE id = ".$del_id);
-		}
+        }
 	}
 	if (isset($_POST['modif'])) {
 		$modif_id = ceil(@$_POST['id']);
