@@ -26,13 +26,13 @@ function page_admin_users($sql){
 }
 
 function page_admin_articles($sql) {
-    $id_categorie = ceil(@$_GET['id']);
-    $return = mysqli_query($sql, "SELECT * FROM categories WHERE id = ".$id_categorie);
+    $id_category = ceil(@$_GET['id']);
+    $return = mysqli_query($sql, "SELECT name FROM categories WHERE id = ".$id_category);
     if (mysqli_num_rows($return) == 0) {
         header("Location: page_admin_categories.php");
         exit;
     }
-    $categorie = mysqli_fetch_assoc($return);
+    $category = mysqli_fetch_assoc($return);
     if (isset($_GET['del_id'])) {
         $del_id = ceil($_GET['del_id']);
         mysqli_query($sql, "DELETE FROM articles WHERE id = ".$del_id);
@@ -52,6 +52,8 @@ function page_admin_articles($sql) {
             $return = mysqli_query($sql, "UPDATE articles SET name = '".$name."', photo = '".$photo."', price = ".$price." WHERE id = ".$modif_id);
         }
     }
+    $_SESSION['category_id'] = $id_category;
+    $_SESSION['category_name'] = $category['name'];
 }
 
 function page_admin_categories($sql) {
