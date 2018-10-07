@@ -4,7 +4,7 @@ header {
 
 nav#left-nav {
     width: 66%;
-    background-color:  #00291b;
+    background-image: linear-gradient(to right, red, yellow, green, blue );
     float: left;
     text-align: left;
     height: 54px;
@@ -12,7 +12,7 @@ nav#left-nav {
 
 nav#right-nav {
     width: 34%;
-    background-color:  #00291b;
+    background-image: linear-gradient(to right, blue, pink);
     float: right;
     height: 54px;
 }
@@ -69,7 +69,7 @@ nav li:hover .submenu {
     width: 270px;
 }
 
-.cat:hover {
+.cat:not(:first-child):hover {
     border-top: 5px solid #49796b;
     background-color: rgba(73,121,107, 0.15);
 }
@@ -96,5 +96,5 @@ nav > ul::after {
 
 nav > ul > li > a {
     padding: 20px 30px;
-    color: #FFF;
+    color: #00291b;
 }
