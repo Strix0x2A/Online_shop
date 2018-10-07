@@ -2,7 +2,7 @@
 include "header.php";
 ?>
 <div class="container">
-<h1>Gestion des articles dans "<?php echo $categorie['name']; ?>" (<a href='admin_categories.php'>Retour</a>)</h1><br />
+<h1>Gestion des articles dans "<?php echo $categorie['name']; ?>" (<a href='page_admin_categories.php'>Retour</a>)</h1><br />
 <?PHP
 if (isset($msg)) {
 	echo "<p>".$msg."</p>";
@@ -17,7 +17,7 @@ while ($data = mysqli_fetch_array($articles)) {
 		<td>#<?php echo $data['id']; ?></td>
 		<td><img alt='<?php echo $data['name']; ?>' src='<?php echo $data['photo']; ?>' title='<?php echo $data['name']; ?>' /></td>
 		<td>
-			<form method="post" action="admin_articles.php?id=<?php echo $id_categorie; ?>">
+			<form method="post" action="page_admin_articles.php?id=<?php echo $id_categorie; ?>">
 				<input type="text" name="id" value="<?php echo $data['id']; ?>" style="display:none;" />
 				Nom: <input type="text" name="name" value="<?php echo $data['name']; ?>" />
 				<br />
@@ -28,7 +28,7 @@ while ($data = mysqli_fetch_array($articles)) {
 				<input type="submit" name="modif" value="Valider les changements" />
 			</form>
 		</td>
-		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cet article? Cette action est irreversible !');" href='admin_articles.php?id=<?php echo $id_categorie; ?>&del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
+		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cet article? Cette action est irreversible !');" href='page_admin_articles.php?id=<?php echo $id_categorie; ?>&del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
 	</tr>
 	<?PHP
 }
@@ -39,7 +39,7 @@ while ($data = mysqli_fetch_array($articles)) {
 		<td>#<?php echo $data['id']; ?></td>
 		<td><img alt='<?php echo $data['name']; ?>' src='<?php echo $data['photo']; ?>' title='<?php echo $data['name']; ?>' /></td>
 		<td>
-			<form method="post" action="admin_articles.php?id=<?php echo $id_categorie; ?>">
+			<form method="post" action="page_admin_articles.php?id=<?php echo $id_categorie; ?>">
 				<input type="text" name="id" value="<?php echo $data['id']; ?>" style="display:none;" />
 				Nom: <input type="text" name="name" value="<?php echo $data['name']; ?>" />
 				<br />
@@ -50,7 +50,7 @@ while ($data = mysqli_fetch_array($articles)) {
 				<input type="submit" name="modif" value="Valider les changements" />
 			</form>
 		</td>
-		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cet article? Cette action est irreversible !');" href='admin_articles.php?id=<?php echo $id_categorie; ?>&del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
+		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cet article? Cette action est irreversible !');" href='page_admin_articles.php?id=<?php echo $id_categorie; ?>&del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
 	</tr>
 	<?PHP
 }

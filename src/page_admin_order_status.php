@@ -2,11 +2,12 @@
 include "header.php";
 ?>
 <div class="cat-container">
-<h1>Commande #<?php echo $id_commande; ?> (<a href='admin_orders.php'>Retour</a>)</h1><br />
+<h1>Commande #<?=$_SESSION['command_id']?> (<a href='page_admin_order_show.php'>Retour</a>)</h1><br />
 <div class="card-columns">
 <?PHP
 echo "<table>";
 $total = 0;
+$content = $_SESSION['content'];
 foreach($content as $id_article => $nb_article) {
 	$retour = mysqli_query($sql, "SELECT * FROM articles WHERE id = ".$id_article." LIMIT 1");
 	if (mysqli_num_rows($retour) > 0) {

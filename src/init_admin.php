@@ -1,6 +1,6 @@
 <?PHP
 
-function admin_users($sql){
+function page_admin_users($sql){
     if (isset($_GET['del_id'])) {
         $del_id = ceil($_GET['del_id']);
         mysqli_query($sql, "DELETE FROM users WHERE id = ".$del_id);
@@ -25,11 +25,11 @@ function admin_users($sql){
     }
 }
 
-function admin_articles($sql) {
+function page_admin_articles($sql) {
     $id_categorie = ceil(@$_GET['id']);
     $return = mysqli_query($sql, "SELECT * FROM categories WHERE id = ".$id_categorie);
     if (mysqli_num_rows($return) == 0) {
-        header("Location: admin_categories.php");
+        header("Location: page_admin_categories.php");
         exit;
     }
     $categorie = mysqli_fetch_assoc($return);
@@ -54,7 +54,7 @@ function admin_articles($sql) {
     }
 }
 
-function admin_categories($sql) {
+function page_admin_categories($sql) {
     if (isset($_GET['del_id'])) {
 		$del_id = ceil($_GET['del_id']);
 		if (!$articles = mysqli_query($sql, "SELECT * FROM articles WHERE gamme = ".$del_id))
@@ -110,22 +110,31 @@ function admin_categories($sql) {
 	}
 }
 
-function admin_order_show($sql) {
+function page_admin_order_status($sql) {
     $id_commande = ceil(@$_GET['id']);
     $return = mysqli_query($sql, "SELECT * FROM panier WHERE id = ".$id_commande);
     if (mysqli_num_rows($return) == 0) {
-        header("Location: admin_orders.php");
+        header("Location: page_admin_order_status.php");
         exit;
     }
     $commande = mysqli_fetch_assoc($return);
-    $content = unserialize($commande['content']);
+    $_SESSION['command_id'] = $id_commande;
+    $_SESSION['content'] = unserialize($commande['content']);
+
 }
 
-function admin_order_status($sql) {
+function page_admin_order_show($sql) {
     if (isset($_GET['valid_id'])) {
         $valid_id = ceil($_GET['valid_id']);
-        mysqli_query($sql, "UPDATE panier SET finished = finished + 1 WHERE id = ".$valid_id);
-        mysqli_query($sql, "UPDATE panier SET finished = 0 WHERE finished > 1");
+        $var = mysqli_query($sql, "SELECT finished FROM panier WHERE id = ".$valid_id);
+        $var = mysqli_fetch_array($var);
+        if ($var['finished'] == 0) {
+            $value = 1;
+        } else {
+            $value = 0;
+        }
+        mysqli_query($sql, "UPDATE panier SET finished = ".$value." WHERE id = ".$valid_id);
+
     }
     if (isset($_GET['del_id'])) {
         $del_id = ceil($_GET['del_id']);
@@ -138,20 +147,20 @@ function init_admin($page, $sql) {
         header("Location: index.php");
         exit;
     }
-    if ($page == "admin_users") {
-        admin_users($sql);
+    if ($page == "page_admin_users") {
+        page_admin_users($sql);
     }
-    if ($page == "admin_articles") {
-        admin_articles($sql);
+    if ($page == "page_admin_articles") {
+        page_admin_articles($sql);
     }
-    if ($page == "admin_categories") {
-        admin_categories($sql);
+    if ($page == "page_admin_categories") {
+        page_admin_categories($sql);
     }
-    if ($page == "admin_order_status") {
-        admin_order_status($sql);
+    if ($page == "page_admin_order_status") {
+        page_admin_order_status($sql);
     }
-    if ($page == "admin_order_show") {
-        admin_order_show($sql);
+    if ($page == "page_admin_order_show") {
+        page_admin_order_show($sql);
     }
 }
 ?>

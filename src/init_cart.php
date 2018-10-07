@@ -31,6 +31,23 @@ function init_cart($page, $sql) {
 }
 
 function init_validate($page, $sql) {
+    if (!ft_logged()) {
+        header("Location: page_connexion.php");
+        exit;
+    }
+	$user = mysqli_query($sql, "SELECT * FROM users WHERE id = ".$_SESSION['id']." LIMIT 1");
+	if (mysqli_num_rows($user) == 0) {
+		unset($_SESSION['id']);
+		header("Location: index.php");
+		exit;
+	}
+	$user = mysqli_fetch_array($user);
+	if ($user['desactivated']) {
+		unset($_SESSION['id']);
+		header("Location: index.php");
+		exit;
+	}
+	$user_id = ceil($user['id']);
     if (isset($_POST['validate'])) {
 		mysqli_query($sql, "INSERT INTO panier VALUES (NULL, ".$user_id.", '".serialize($_SESSION['panier'])."', 0)");
 		unset($_SESSION['panier']);

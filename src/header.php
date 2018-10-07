@@ -56,7 +56,7 @@ function total_cart($sql) {
 				<a>ACCOUNT (<?= $user['email'] ?>)</a>
 					<ul class="submenu">
 						<?PHP if (ft_admin()) { ?>
-						<li><a href="admin.php">ADMIN_PANEL</a></li>
+						<li><a href="page_admin.php">ADMIN_PANEL</a></li>
 						<?PHP } ?> 
 						<li><a onclick="return confirm('Voulez-vous vraiment desactiver votre compte? Cette action est irreversible !');" href="connexion.php?desactivation=1">Desactiver ce compte</a></li>
 						<li><a href="page_connexion.php?deconnexion=1">SIGN OUT</a></li>

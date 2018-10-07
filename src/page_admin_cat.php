@@ -1,6 +1,6 @@
 <?PHP include "header.php"; ?>
 <div class="cat-container">
-<h1>Gestion des categories (<a href='admin.php'>Retour</a>)</h1><br />
+<h1>Gestion des categories (<a href='page_admin.php'>Retour</a>)</h1><br />
 <?PHP
 if (isset($msg)) {
 	echo "<p>".$msg."</p>";
@@ -14,14 +14,14 @@ while ($data = mysqli_fetch_array($categories)) {
 	<tr>
 		<td>#<?php echo $data['id']; ?></td>
 		<td>
-			<form method="post" action="admin_categories.php">
+			<form method="post" action="page_admin_categories.php">
 				<input type="text" name="id" value="<?php echo $data['id']; ?>" style="display:none;" />
 				<input type="text" name="name" value="<?php echo $data['name']; ?>" />
 				<input type="submit" name="modif" value="OK" />
 			</form>
 		</td>
-		<td><a href='admin_articles.php?id=<?php echo $data['id']; ?>'>Gerer les articles</a></td>
-		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cette categorie? Cette action est irreversible !');"href='admin_categories.php?del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
+		<td><a href='page_admin_articles.php?id=<?php echo $data['id']; ?>'>Gerer les articles</a></td>
+		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cette categorie? Cette action est irreversible !');"href='page_admin_categories.php?del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
 	</tr>
 	<?PHP
 }
@@ -29,7 +29,7 @@ while ($data = mysqli_fetch_array($categories)) {
 </table>
 <hr>
 <h1>Ajouter une categorie</h1>
-<form method="post" action="admin_categories.php">
+<form method="post" action="page_admin_categories.php">
 	<table>
 		<tr>
 			<td>Nom de la categorie:</td>
@@ -43,7 +43,7 @@ while ($data = mysqli_fetch_array($categories)) {
 </form>
 <hr>
 <h1>Ajouter un article</h1>
-<form method="post" action="admin_categories.php">
+<form method="post" action="page_admin_categories.php">
 	<table>
 		<tr>
 			<td>Type:</td>
