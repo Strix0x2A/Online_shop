@@ -49,6 +49,7 @@ function init_conn($page, $sql) {
     if (ft_logged()) {
         if (isset($_GET['deconnexion'])) {
             unset($_SESSION['id']);
+            unset($_SESSION['panier']);
         } else if (isset($_GET['desactivation'])) {
             mysqli_query($sql, "UPDATE users SET desactivated = 1 WHERE id = ".$_SESSION['id']);
             unset($_SESSION['id']);
