@@ -1,6 +1,4 @@
-<?PHP
-include "header.php";
-?>
+<?PHP include "header.php"; ?>
 <div class="cat-container">
 <h1>Gestion des categories (<a href='page_admin.php'>Retour</a>)</h1><br />
 <?PHP
@@ -14,16 +12,16 @@ $categories = mysqli_query($sql, "SELECT * FROM categories ORDER BY id");
 while ($data = mysqli_fetch_array($categories)) {
 	?>
 	<tr>
-		<td>#<?php echo $data['id']; ?></td>
+		<td>#<?PHP echo $data['id']; ?></td>
 		<td>
 			<form method="post" action="page_admin_categories.php">
-				<input type="text" name="id" value="<?php echo $data['id']; ?>" style="display:none;" />
-				<input type="text" name="name" value="<?php echo $data['name']; ?>" />
+				<input type="text" name="id" value="<?PHP echo $data['id']; ?>" style="display:none;" />
+				<input type="text" name="name" value="<?PHP echo $data['name']; ?>" />
 				<input type="submit" name="modif" value="OK" />
 			</form>
 		</td>
-		<td><a href='page_admin_articles.php?id=<?php echo $data['id']; ?>'>Gerer les articles</a></td>
-		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cette categorie? Cette action est irreversible !');"href='page_admin_categories.php?del_id=<?php echo $data['id']; ?>'>Supprimer</a></td>
+		<td><a href='page_admin_articles.php?id=<?PHP echo $data['id']; ?>'>Gerer les articles</a></td>
+		<td><a onclick="return confirm('Voulez-vous vraiment supprimer cette categorie? Cette action est irreversible !');"href='page_admin_categories.php?del_id=<?PHP echo $data['id']; ?>'>Supprimer</a></td>
 	</tr>
 	<?PHP
 }
@@ -38,7 +36,7 @@ while ($data = mysqli_fetch_array($categories)) {
 			<td>
 				<input type="text" name="name" />
 				est une gamme: <input type="checkbox" name="is_gamme" value="true"/>
-				<input type="submit" name="add" value="OK" />
+				<input type="submit" name="add_cat" value="OK" />
 			</td>
 		</tr>
 	</table>
@@ -50,7 +48,7 @@ while ($data = mysqli_fetch_array($categories)) {
 		<tr>
 			<td>Type:</td>
 			<td>
-				<select name="cat_type"><?php
+				<select name="cat_type"><?PHP
 				$categories = mysqli_query($sql, "SELECT * FROM categories WHERE cat_type = '0' ORDER BY name");
 				while ($data = mysqli_fetch_array($categories)) {
 					echo "<option value='".$data['id']."'>".$data['name']."</option>";
@@ -61,7 +59,7 @@ while ($data = mysqli_fetch_array($categories)) {
 		<tr>
 			<td>Gamme:</td>
 			<td>
-				<select name="cat_gamme"><?php
+				<select name="cat_gamme"><?PHP
 				$categories = mysqli_query($sql, "SELECT * FROM categories WHERE cat_type = '1' ORDER BY name");
 				while ($data = mysqli_fetch_array($categories)) {
 					echo "<option value='".$data['id']."'>".$data['name']."</option>";
@@ -82,9 +80,7 @@ while ($data = mysqli_fetch_array($categories)) {
 			<td><input type="text" name="price" /></td>
 		</tr>
 	</table>
-	<input class="center" type="submit" name="add2" value="Ajouter un article" />
+	<input class="center" type="submit" name="add_prod" value="Ajouter un article" />
 </form>
 </div>
-<?PHP
-include "footer.php";
-?>
+<?PHP include "footer.php"; ?>
