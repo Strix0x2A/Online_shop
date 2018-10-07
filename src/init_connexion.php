@@ -18,6 +18,7 @@ function connexion($sql) {
         header("Location: index.php");
         exit;
     }
+    $_SESSION['msg_co'] = $msg;
 }
 
 function inscription($sql) {
@@ -43,6 +44,7 @@ function inscription($sql) {
         header("Location: page_connexion.php");
         exit;
     }
+    $_SESSION['msg_inscr'] = $msg;
 }
 
 function init_conn($page, $sql) {

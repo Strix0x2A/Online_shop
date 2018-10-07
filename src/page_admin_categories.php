@@ -2,8 +2,9 @@
 <div class="cat-container">
 <h1>Gestion des categories (<a href='page_admin.php'>Retour</a>)</h1><br />
 <?PHP
-if (isset($msg)) {
-	echo "<p>".$msg."</p>";
+if (isset($_SESSION['msg_admin'])) {
+	echo "<p>".$_SESSION['msg_admin']."</p>";
+	unset($_SESSION['msg_admin']);
 }
 ?>
 <table>

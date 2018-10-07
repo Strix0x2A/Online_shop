@@ -4,8 +4,9 @@ include "header.php";
 <div class="container">
 <h1>Gestion des articles dans "<?PHP echo $_SESSION['category_name']; ?>" (<a href='page_admin_categories.php'>Retour</a>)</h1><br />
 <?PHP
-if (isset($msg)) {
-	echo "<p>".$msg."</p>";
+if (isset($_SESSION['msg_admin'])) {
+	echo "<p>".$_SESSION['msg_admin']."</p>";
+	unset($_SESSION['msg_admin']);
 }
 ?>
 <table>

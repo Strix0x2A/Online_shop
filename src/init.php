@@ -1,10 +1,13 @@
 <?PHP
 include "const.php";
-include "page_error404.php";
 require_once "router.php";
 
 session_start();
 $sql = mysqli_connect($ip_addr.":".$port, 'root', 'root', $shop_name);
+if (!$sql) {
+	echo "Error : Unable to connect to MySQL." . PHP_EOL;
+	exit ;
+}
 
 function get_page() {
 	$page = explode("/", $_SERVER['PHP_SELF']);
@@ -31,8 +34,6 @@ if (ft_logged()) {
 $page = get_page();
 if (array_key_exists($page, $page_funcs)) {
 	$page_funcs[$page]($page, $sql);
-} else {
-	page_error404($page, $sql);
 }
 
 function ft_logged() {

@@ -42,7 +42,13 @@ function test($value) {
 </div>
 
 <?PHP
-if (isset($msg))
-	echo "<p>".$msg ."</p>";
+if (isset($_SESSION['msg_co'])) {
+	echo "<p>".$_SESSION['msg_co']."</p>";
+	unset($_SESSION['msg_co']);
+}
+if (isset($_SESSION['msg_inscr'])) {
+	echo "<p>".$_SESSION['msg_inscr']."</p>";
+	unset($_SESSION['msg_inscr']);
+}
 include "footer.php" 
 ?>

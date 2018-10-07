@@ -62,7 +62,7 @@ function page_admin_categories($sql) {
 		if (!$articles = mysqli_query($sql, "SELECT * FROM articles WHERE gamme = ".$del_id))
 			$articles = mysqli_query($sql, "SELECT * FROM articles WHERE type = ".$del_id);
 		if (mysqli_num_rows($articles) > 0) {
-			$msg = "Il y a encore des articles dans cette categorie, vous ne pouvez donc pas la supprimer";
+            $msg = "Il y a encore des articles dans cette categorie, vous ne pouvez donc pas la supprimer";
 		} else {
 			mysqli_query($sql, "DELETE FROM categories WHERE id = ".$del_id);
 		}
@@ -108,8 +108,9 @@ function page_admin_categories($sql) {
 			$query = "INSERT INTO articles (name, gamme, type, photo, price) VALUES ('$name', $gamme, $type, '$photo', $price)";
 			$msg = "L'article '".$name."' a bien ete ajoutee dans $type/$gamme";
 			mysqli_query($sql, $query);
-		}
-	}
+        }
+    }
+    $_SESSION['msg_admin'] = $msg;
 }
 
 function page_admin_order_status($sql) {
