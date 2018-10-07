@@ -1,9 +1,19 @@
+@font-face {
+    font-family: shelter;
+    src: url("font/shelter/Shelter.otf") format("opentype");
+}
+
+nav>ul>li:first-child {
+    font-family: "shelter";
+    font-size: 150%;
+}
+
 body {
     margin: 0 auto;
+    background-color: rgb(238, 238, 227);
 }
 
 .container {
-    background-color: rgb(250, 241, 241);
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
@@ -15,7 +25,6 @@ body {
 }
 
 .cat-container {
-    background-color: rgb(250, 241, 241);
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
@@ -45,8 +54,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #00291b;
-    color: white;
+    background-image: linear-gradient(beige, green);
+    color: #00291b;
     text-align: right;
     height: 22px;
     padding-top: 8px;
